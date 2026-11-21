@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | EveryDay Clinic</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a class="brand" href="index.html">EveryDay Clinic</a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="doctors.html">Doctors</a></li>
+          <li><a href="appointment.html">Book Appointment</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a class="active" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="section-header">
+        <h1>Contact Front Desk</h1>
+        <p>Have a question about services, referrals, or clinic hours? Send us a message.</p>
+      </div>
+
+      <div class="grid-2">
+        <div id="contactFeedback" style="grid-column: 1 / -1;"></div>
+
+        <form class="form-card" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="contactName">Your Name *</label>
+            <input type="text" id="contactName" name="contactName" placeholder="Full name" />
+            <div class="error-msg" id="contactNameError"></div>
+          </div>
+
+          <div class="form-group">
+            <label for="contactEmail">Email Address *</label>
+            <input type="email" id="contactEmail" name="contactEmail" placeholder="youemail@gmail.com" />
+            <div class="error-msg" id="contactEmailError"></div>
+          </div>
+
+          <div class="form-group">
+            <label for="contactMessage">Message *</label>
+            <textarea id="contactMessage" name="contactMessage" rows="4" placeholder="How can we help you?"></textarea>
+            <div class="error-msg" id="contactMessageError"></div>
+          </div>
+
+          <button class="btn btn-primary" type="submit">Send Message</button>
+        </form>
+
+       <aside class="card" style="justify-content: flex-start;">
+          <div>
+            <span class="badge">Clinic Info &amp; Location</span>
+            <h2 style="margin-top: 0.6rem; font-size: 1.25rem;">EveryDay Outpatient Centre</h2>
+            <p style="color: var(--muted); margin-top: 0.5rem;">Jalan Hospital 47000, Sungai Buloh, Selangor, Malaysia</p>
+            <p style="margin-top: 0.75rem;"><strong>Phone:</strong> +60 3-2218 9171</p>
+            <p><strong>Email:</strong> care@MediPlus-gmail.com</p>
+
+            <div class="map-box">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.5191026188445!2d101.58897787497123!3d3.220041996755113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc45bdd83450d9%3A0xf8dab7409e3bf27!2sJalan%20Hospital%2C%2047000%2C%20Selangor!5e0!3m2!1sen!2smy!4v1795201008977!5m2!1sen!2smy" 
+            width="600" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="strict-origin-when-cross-origin">
+          </iframe>
+            </div>
+
+            <p style="margin-top: 0.75rem; font-size: 0.85rem; color: var(--muted);">
+              Map requires an active internet connection. For urgent medical emergencies, please visit the nearest hospital emergency department.
+            </p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>EveryDay Clinic</strong>
+      </div>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="doctors.html">Doctors</a></li>
+        <li><a href="appointment.html">Book Appointment</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
